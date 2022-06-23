@@ -609,22 +609,27 @@ box-shadow: 0px 0px 9px 4px rgba(0,0,0,0.1);
 }
 
 .hot__left {
-    background-image: url(images/tower.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     width: 627px;
     height: 598px;
-    padding: 60px 65px;
-    display: flex;
-    flex-direction: column;
+    line-height: 0%;
+    position: relative;
+}
+
+.hot__left img{
+    width: 627px;
+    height: 598px;
 }
 
 .hot__left a {
-    margin-top: auto;
+    display: inline-block;
+    position: absolute;
+    left:50px;
+    bottom:60px;
     background-color: white;
     border-radius: 4px;
     font-weight: 500;
     width: 119px;
+    line-height:18px;
     padding: 11px 19px;
     color: #2a42e8;
 }
@@ -1424,6 +1429,9 @@ footer {
 
 /* media queries ***************************************************/
 
+
+/* 1350 *************************************************************/
+
 @media screen and (max-width: 1350px) {
 
     .nav__menu {
@@ -1486,6 +1494,12 @@ footer {
 
     .hot__left {
         align-items: center;
+    }
+
+    .hot__left a {
+        left:0;
+        right:0;
+        margin: auto;
     }
 
     .area__container {
@@ -1566,7 +1580,11 @@ footer {
         width: 90%;
     }
 }
+/* 1350 *************************************************************/
 
+
+
+/* 1000 *************************************************************/
 
 @media screen and (max-width: 1000px) {
 
@@ -1677,13 +1695,16 @@ footer {
     .footer__container__bot .inner__container div a {
         margin-left: 0px;
     }
-
-
-
 }
 
+/* 1000 *************************************************************/
+
+
+
+/* 700 *************************************************************/
 
 @media screen and (max-width: 700px) {
+    
 
     .hero__container__inner h1 {
         font-size: 34px;
@@ -1728,6 +1749,17 @@ footer {
         font-size: 32px;
         width: 90%;
         margin: 13px auto 0 auto;
+    }
+
+
+    .hot__left{
+        width: auto;
+        height: auto;
+    }
+
+    .hot__left img{
+        width: 100%;
+        height: auto;
     }
 
     .hot__right {
@@ -1816,10 +1848,11 @@ footer {
         height: 50px;
         width: 50px;
     }
-
-
 }
+/* 700 *************************************************************/
 
+
+/* 450 *************************************************************/
 
 @media screen and (max-width: 450px) {
 
@@ -1924,10 +1957,9 @@ footer {
         font-size: 18px;
         line-height: 30px;
     }
-
-
-
-
 }
+
+/* 450 *************************************************************/
+
 
 /* media queries ***************************************************/
